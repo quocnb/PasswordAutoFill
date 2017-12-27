@@ -14,6 +14,7 @@
 		798CDDF31FF34FDB00F128EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798CDDF11FF34FDB00F128EB /* LaunchScreen.storyboard */; };
 		798CDDFB1FF350EC00F128EB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CDDFA1FF350EC00F128EB /* LoginViewController.swift */; };
 		798CDDFD1FF3512300F128EB /* LoginStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CDDFC1FF3512300F128EB /* LoginStatus.swift */; };
+		798CDE021FF352F800F128EB /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798CDE011FF352F800F128EB /* CommonFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		798CDDF41FF34FDB00F128EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		798CDDFA1FF350EC00F128EB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		798CDDFC1FF3512300F128EB /* LoginStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatus.swift; sourceTree = "<group>"; };
+		798CDE011FF352F800F128EB /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				798CDDE81FF34FDB00F128EB /* AppDelegate.swift */,
+				798CDE031FF352FF00F128EB /* Utilities */,
 				798CDE001FF3514500F128EB /* Data */,
 				798CDDFE1FF3513300F128EB /* ViewControllers */,
 				798CDDFF1FF3513D00F128EB /* Storyboards */,
@@ -92,6 +95,14 @@
 				798CDDFC1FF3512300F128EB /* LoginStatus.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		798CDE031FF352FF00F128EB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				798CDE011FF352F800F128EB /* CommonFunctions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 			files = (
 				798CDDFB1FF350EC00F128EB /* LoginViewController.swift in Sources */,
 				798CDDFD1FF3512300F128EB /* LoginStatus.swift in Sources */,
+				798CDE021FF352F800F128EB /* CommonFunctions.swift in Sources */,
 				798CDDEB1FF34FDB00F128EB /* ViewController.swift in Sources */,
 				798CDDE91FF34FDB00F128EB /* AppDelegate.swift in Sources */,
 			);

@@ -28,18 +28,6 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "LoggedIn", sender: self)
     }
 
-    private func validate(username: String?, password: String?)
-        -> Bool {
-            guard let username = username,
-                let password = password,
-                username.count >= 5,
-                password.count >= 5 else {
-                    return false
-            }
-            return true
-    }
-
-    // 2
     private func enableLoginButton(_ enable: Bool) {
         loginButton.isEnabled = enable
         loginButton.alpha = enable ? 1.0 : 0.5
@@ -61,8 +49,8 @@ extension LoginViewController: UITextFieldDelegate {
             }
         }
         // 4
-        let isValid = validate(username: usernameText,
-                               password: passwordText)
+        let isValid = isValidated(username: usernameText,
+                                  password: passwordText)
         enableLoginButton(isValid)
         return true
     }
@@ -72,8 +60,8 @@ extension LoginViewController: UITextFieldDelegate {
             password.becomeFirstResponder()
         } else {
             password.resignFirstResponder()
-            if validate(username: username.text,
-                        password: password.text) {
+            if isValidated(username: username.text,
+                           password: password.text) {
                 login(loginButton)
             }
         }
